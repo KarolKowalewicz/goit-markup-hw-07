@@ -2,17 +2,16 @@
 @import './components/navigation';
 @import './utils/colors';
 @import 'utils/mixins';
+@import './utils/reset';
 @import './components/header';
+@import './components/main';
 @import './components/logo';
 @import './components/site-nav';
 @import './components/section';
+@import './utils/variables';
+@import './components/banner';
+@import './components/modal';
+@import './utils/hidden';
+@import './components/skills_icons';
+@import './components/footer';
 
-
-.container {
-  background-color: map-get($colors, 'background');
-}
-
-ul{
-  color: getColor('primary');
-  background-color: getColor('background');
-}

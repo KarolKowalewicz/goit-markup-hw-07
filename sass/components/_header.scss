@@ -1,35 +1,3 @@
-
-
-body {
-  /* font-size: 2rem; */
-  font-size: 14px;
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  color: var(--color-black);
-  font-weight: 400;
-  letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-}
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-/* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
-img {
-  display: block;
-}
-
 .container {
   margin: 0 auto;
   width: 100%;
@@ -40,3 +8,80 @@ img {
   width: 1600px;
   height: 600px;
 }
+
+.container-klients {
+  width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 15px;
+}
+.client-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: var(--color-grey-light);
+}
+
+.client-box-size {
+  border: 1px solid var(--color-grey-light);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  color: var(--color-grey-light);
+}
+
+.client-box-size:hover {
+  border-color: var(--hover-color);
+}
+
+.section {
+  padding: 94px 0px 94px 0px;
+}
+.container-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 44px;
+}
+
+.container-work-small {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.container-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white-dark);
+  margin: 0 auto;
+  height: auto;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+
+.margin-agencja {
+  padding: 32px;
+}
+
+.margin-bottom {
+  border-bottom: 2px solid #ececec;
+}
+
+.margin-button {
+  padding-bottom: 50px;
+}
+
+
