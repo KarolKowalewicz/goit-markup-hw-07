@@ -1,0 +1,42 @@
+
+
+body {
+  /* font-size: 2rem; */
+  font-size: 14px;
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: var(--color-black);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container-big {
+  width: 1600px;
+  height: 600px;
+}

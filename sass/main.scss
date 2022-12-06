@@ -1,5 +1,18 @@
-body {
-  color: aqua;
-  text-decoration: none;
-  background-color: beige;
+@use './utils/vars' as *;
+@import './components/navigation';
+@import './utils/colors';
+@import 'utils/mixins';
+@import './components/header';
+@import './components/logo';
+@import './components/site-nav';
+@import './components/section';
+
+
+.container {
+  background-color: map-get($colors, 'background');
+}
+
+ul{
+  color: getColor('primary');
+  background-color: getColor('background');
 }
