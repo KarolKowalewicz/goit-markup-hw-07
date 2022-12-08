@@ -17,21 +17,37 @@
 
   <body>
     <header class="margin-bottom">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
       <div class="container header-wrapper">
         <nav>
-          <ul class="button-list">
-            <li class="list-menu">
+          <ul class="menu-horizontal">
+            <li class="menu">
               <a href="#" class="logo-text-black"><span class="logo-text-blue">Web</span>Studio</a>
             </li>
-            <li class="list-menu">
+            <li class="menu">
               <a href="./index.html" class="active-link">Agencja</a>
             </li>
-            <li class="list-menu"><a href="./portfolio.html" class="navigation">Portfolio</a></li>
-            <li class="list-menu"><a href="#" class="navigation">Kontakt</a></li>
+            <li class="menu"><a href="./portfolio.html" class="navigation">Portfolio</a></li>
+            <li class="menu"><a href="#" class="navigation">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="button-list">
-          <li class="list-menu envelope infolist">
+        <ul class="menu-horizontal">
+          <li class="menu envelope infolist">
             <a href="mailto:info@devstudio.com" class="kontakt">
               <svg class="contactcolor" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -40,7 +56,7 @@
             >
           </li>
 
-          <li class="list-menu phone">
+          <li class="menu phone">
             <a href="tel:+48111111111" class="kontakt infolist">
               <svg class="contactcolor" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -52,7 +68,7 @@
       </div>
     </header>
     <div>
-      <div class="banner-background container__big">
+      <div class="container-new banner-background">
         <div>
           <h1 class="title-banner">
             EFEKTYWNE ROZWIĄZANIA <br />
@@ -63,71 +79,76 @@
       </div>
     </div>
 
-    <main class="section">
-      <div class="container">
-        <div class="container__row">
-          <div class="beleczka__kafelek box__border">
-            <svg class="svg__item">
-              <use xlink:href="./images/icons.svg#icon-antenna"></use>
-            </svg>
-          </div>
-          <div class="beleczka__kafelek kafelek-border box__border">
-            <svg class="svg__item">
-              <use xlink:href="./images/icons.svg#icon-clock"></use>
-            </svg>
-          </div>
-          <div class="beleczka__kafelek box__border">
-            <svg class="svg__item">
-              <use xlink:href="./images/icons.svg#icon-diagram"></use>
-            </svg>
-          </div>
-          <div class="beleczka__kafelek box__border">
-            <svg class="svg__item">
-              <use xlink:href="./images/icons.svg#icon-astronaut"></use>
-            </svg>
+    <main>
+      <!-- SEKCJA globaltech -->
+      <section class="globaltech">
+        <div class="container">
+          <div>
+            <ul class="container-row">
+              <li>
+                <div class="beleczka__kafelek box__border">
+                  <svg class="svg__item">
+                    <use xlink:href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <div class="beleczka__lorem">
+                  <h4 class="box__info__title">LOREM IPSUM</h4>
+                  <p class="box__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="beleczka__kafelek kafelek-border box__border">
+                  <svg class="svg__item">
+                    <use xlink:href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <div class="beleczka__lorem">
+                  <h4 class="box__info__title">LOREM IPSUM</h4>
+                  <p class="box__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="beleczka__kafelek box__border">
+                  <svg class="svg__item">
+                    <use xlink:href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <div class="beleczka__lorem">
+                  <h4 class="box__info__title">LOREM IPSUM</h4>
+                  <p class="box__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="beleczka__kafelek box__border">
+                  <svg class="svg__item">
+                    <use xlink:href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <div class="beleczka__lorem">
+                  <h4 class="box__info__title">LOREM IPSUM</h4>
+                  <p class="box__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="container__row">
-          <div class="beleczka__lorem">
-            <h4 class="box__info__title">LOREM IPSUM</h4>
-            <p class="box__info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </div>
-
-          <div class="beleczka__lorem">
-            <div>
-              <h4 class="box__info__title">LOREM IPSUM</h4>
-              <p class="box__info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
-            </div>
-          </div>
-
-          <div class="beleczka__lorem">
-            <h4 class="box__info__title">LOREM IPSUM</h4>
-            <p class="box__info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </div>
-
-          <div class="beleczka__lorem">
-            <h4 class="box__info__title">LOREM IPSUM</h4>
-            <p class="box__info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
+      </section>
+      <!-- sSECTION - AS WE WORK -->
+      <section class="container">
         <div class="container__work">
           <section>
             <h2 class="title__one">Czym sie zajmujemy</h2>
@@ -168,7 +189,7 @@
             </ul>
           </section>
         </div>
-      </div>
+      </section>
 
       <div>
         <div class="banner-background-team">
@@ -280,7 +301,7 @@
                       <ul class="social__list">
                         <li>
                           <a class="social__list__link" href="https://www.instagram.com">
-                            <svg  width="20" height="20">
+                            <svg width="20" height="20">
                               <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                           </a>
@@ -357,7 +378,9 @@
             </section>
           </div>
         </div>
-        <section>
+      </div>
+      <section class="ouercustomers">
+        <div>
           <div class="container">
             <h2 class="title__one">Nasi klienci</h2>
             <div class="client-box">
@@ -410,53 +433,84 @@
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
 
     <footer class="footer">
       <div class="container footer__display">
         <div>
-          <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
-          <br />
-          <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+          <ul>
+            <li>
+              <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
+            </li>
+            <li class="footer__address"><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
+            <li class="footer__address">
+              <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
+            </li>
+            <li class="footer__address">
+              <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <div class="footer__display__social">
-            <h3>DOŁĄCZ DO NAS</h3>
-            <ul class="footer__joinus__icons">
-              <li class="footer__joinus__margin">
-                <a href="https://www.instagram.com" class="footer__joinus__link">
-                  <svg width="20" height="20">
-                    <use class="joinus__icons" href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__joinus__margin">
-                <a href="https://www.twitter.com" class="footer__joinus__link">
-                  <svg width="20" height="20">
-                    <use class="joinus__icons" href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__joinus__margin">
-                <a href="https://www.facebook.com" class="footer__joinus__link">
-                  <svg width="20" height="20">
-                    <use class="joinus__icons" href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__joinus__margin">
-                <a href="https://www.linkedin.com" class="footer__joinus__link">
-                  <svg width="20" height="20">
-                    <use class="joinus__icons" href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+        <div class="footer__display__social">
+          <h3>DOŁĄCZ DO NAS</h3>
+          <ul class="footer__joinus__icons">
+            <li class="footer__joinus__margin">
+              <a href="https://www.instagram.com" class="footer__joinus__link">
+                <svg width="20" height="20">
+                  <use class="joinus__icons" href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__joinus__margin">
+              <a href="https://www.twitter.com" class="footer__joinus__link">
+                <svg width="20" height="20">
+                  <use class="joinus__icons" href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__joinus__margin">
+              <a href="https://www.facebook.com" class="footer__joinus__link">
+                <svg width="20" height="20">
+                  <use class="joinus__icons" href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__joinus__margin">
+              <a href="https://www.linkedin.com" class="footer__joinus__link">
+                <svg width="20" height="20">
+                  <use class="joinus__icons" href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="footer__display">
@@ -535,6 +589,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -19,30 +19,30 @@
     <header class="margin-bottom">
       <div class="container header-wrapper">
         <nav>
-          <ul class="button-list">
-            <li class="list-menu">
+          <ul class="menu-horizontal">
+            <li class="menu">
               <a href="#" class="logo-text-black"><span class="logo-text-blue">Web</span>Studio</a>
             </li>
-            <li class="list-menu">
+            <li class="menu">
               <a href="./index.html" class="navigation">Agencja</a>
             </li>
-            <li class="list-menu"><a href="./portfolio.html" class="active-link">Portfolio</a></li>
-            <li class="list-menu"><a href="#" class="navigation">Kontakt</a></li>
+            <li class="menu"><a href="./portfolio.html" class="active-link">Portfolio</a></li>
+            <li class="menu"><a href="#" class="navigation">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="button-list">
-          <li class="list-menu envelope infolist">
+        <ul class="menu-horizontal">
+          <li class="menu envelope infolist">
             <a href="mailto:info@devstudio.com" class="kontakt">
-              <svg  width="16" height="12">
+              <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="list-menu phone">
+          <li class="menu phone">
             <a href="tel:+48111111111" class="kontakt infolist">
-              <svg  width="10" height="16">
+              <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -52,16 +52,17 @@
       </div>
     </header>
 
-    <main>
-      <section class="section">
-        <div class="container margin-button button-kategory">
+    <main class="container-new">
+      <section class="menu-row">
+        <div class="menu-row-center menu-row-center__button-kategory">
           <a href="#"><button type="button" class="button">Wszystkie</button></a>
           <a href="#"><button type="button" class="button">Strony</button></a>
           <a href="#"><button type="button" class="button">Aplikacje</button></a>
           <a href="#"><button type="button" class="button">Dizajn</button></a>
           <a href="#"><button type="button" class="button">Marketing</button></a>
         </div>
-
+      </section>
+      <section>
         <div class="container portfolio-tabela">
           <div class="portfolio-item">
             <a href="#" class="project-link">
@@ -254,11 +255,18 @@
     <footer class="footer">
       <div class="container footer__display">
         <div>
-          <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
-          <br />
-          <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+          <ul>
+            <li>
+              <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
+            </li>
+            <li class="footer__address"><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
+            <li class="footer__address">
+              <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
+            </li>
+            <li class="footer__address">
+              <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
         <div>
           <div class="footer__display__social">
@@ -318,5 +326,13 @@
         </div>
       </div>
     </footer>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

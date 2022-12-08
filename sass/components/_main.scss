@@ -6,7 +6,7 @@
 
 .portfolio-tabela {
   display: flex;
-  gap: 30px;
+  gap: 26px;
   flex-wrap: wrap;
 }
 
@@ -60,13 +60,13 @@
   padding: 20px 24px;
 }
 
-.portfolio-item {
+.portfolio-tabela-item {
   display: inline-block;
   flex-direction: column;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
-.portfolio-item:hover {
+.portfolio-tabela-item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -174,11 +174,6 @@ h3 {
   color: var(--color-white);
 }
 
-.address {
-  font-size: 14px;
-  margin-top: 20px;
-}
-
 .icon {
   text-decoration: none;
   border-style: none;
@@ -204,7 +199,21 @@ h3 {
   margin: 25px 100px;
 }
 
-.section {
+.globaltech  {
+  padding: 94px 0px 10px;
+}
+
+.ouercustomers {
+  padding-bottom: 94px;
+}
+
+
+
+.container-new {
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
   padding: 94px 0px 94px 0px;
 }
 
@@ -215,11 +224,6 @@ h3 {
   max-width: 1200px;
 }
 
-.container__big {
-  width: 1600px;
-  height: 600px;
-}
-
 .container__work {
   display: flex;
   align-items: center;
@@ -228,14 +232,14 @@ h3 {
 }
 
 .container__work__small {
-  position: relative;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin: 15px;
 }
 
-.container__row {
+.container-row {
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -248,9 +252,7 @@ h3 {
   gap: 30px;
 }
 
-.beleczka__lorem {
-  width: 270px;
-}
+
 
 .beleczka__kafelek {
   align-content: center;
@@ -259,6 +261,9 @@ h3 {
   border-radius: 4px;
   color: var(--color-grey-light);
   background-color: var(--color-white-dark);
+}
+.beleczka__lorem {
+  width: 270px;
 }
 
 .box__border {
@@ -271,7 +276,7 @@ h3 {
 }
 
 .center {
-@include center;
+  @include center;
 }
 
 .list {
@@ -300,4 +305,3 @@ h3 {
 .icon-client:hover {
   fill: var(--hover-color);
 }
-

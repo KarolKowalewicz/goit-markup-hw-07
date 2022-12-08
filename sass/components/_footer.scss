@@ -13,6 +13,18 @@
   }
 }
 
+.footer-display {
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
+  /* gap: 0; */
+}
+
+
+.footer__address {
+  padding: 5px;
+}
+
 .icon-sm-footer {
   display: inline-flex;
   align-items: center;
