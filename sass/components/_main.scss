@@ -53,7 +53,6 @@
 .project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* color: var(--main-color); */
 }
 .project__border {
   border: 1px solid var(--border-color);
@@ -104,13 +103,13 @@
   color: var(--color-grey);
 }
 
-.box__info {
+.Block__Element--Info {
   margin-top: 6px;
   font-size: 14px;
   color: var(--color-grey);
 }
 
-.box__info__title {
+.Block__Element--Modifier {
   margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
@@ -199,15 +198,13 @@ h3 {
   margin: 25px 100px;
 }
 
-.globaltech  {
+.globaltech {
   padding: 94px 0px 10px;
 }
 
 .ouercustomers {
   padding-bottom: 94px;
 }
-
-
 
 .container-new {
   justify-content: center;
@@ -252,9 +249,7 @@ h3 {
   gap: 30px;
 }
 
-
-
-.beleczka__kafelek {
+.Globaltech-Place {
   align-content: center;
   justify-content: center;
   border: 2px var(--color-grey-light);
@@ -262,11 +257,11 @@ h3 {
   color: var(--color-grey-light);
   background-color: var(--color-white-dark);
 }
-.beleczka__lorem {
+.Block__Element {
   width: 270px;
 }
 
-.box__border {
+.Globaltech-Place--Border {
   border: 2px solid var(--color-white-dark);
   border-radius: 4px;
 }

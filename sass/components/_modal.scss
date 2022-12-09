@@ -22,35 +22,35 @@
   top: 0;
   position: fixed;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 25px;
-  height: 25px;
-  background: #fff;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.button-close {
+.button-close-icon {
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 8px;
+  right: 8px;
+  width: 11px;
+  height: 11px;
 }
-
 
 .modal-main-text {
   font-weight: 700;
   font-size: 20px;
   color: var(--color-grey);
-  /* line-height: 23.44px;     zostawić */
+  line-height: 23.44px;
   text-align: center;
-  /* margin-bottom: 12px; */
   letter-spacing: 0.03em;
 }
 
@@ -70,7 +70,6 @@
   font-family: inherit;
   display: block;
   margin: 0 auto;
-  /* margin-top: 30px; */
 }
 
 .modal-labels {
@@ -78,7 +77,6 @@
   display: block;
   top: 20px;
   padding-top: 10px;
-  /* margin-bottom: 10x; */
 }
 
 .modal-holder {
@@ -146,7 +144,6 @@
   fill: var(--hover-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .text-area {
   width: 90%;

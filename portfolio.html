@@ -16,7 +16,22 @@
   </head>
 
   <body>
-    <header class="margin-bottom">
+    <header class="header-margin-bottom">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
       <div class="container header-wrapper">
         <nav>
           <ul class="menu-horizontal">
@@ -26,13 +41,13 @@
             <li class="menu">
               <a href="./index.html" class="navigation">Agencja</a>
             </li>
-            <li class="menu"><a href="./portfolio.html" class="active-link">Portfolio</a></li>
+            <li class="menu"><a href="./portfolio.html" class="menu-active-link">Portfolio</a></li>
             <li class="menu"><a href="#" class="navigation">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="menu-horizontal">
-          <li class="menu envelope infolist">
-            <a href="mailto:info@devstudio.com" class="kontakt">
+          <li class="menu menu-envelope infolist">
+            <a href="mailto:info@devstudio.com" class="contakt">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -40,8 +55,8 @@
             >
           </li>
 
-          <li class="menu phone">
-            <a href="tel:+48111111111" class="kontakt infolist">
+          <li class="menu menu-phone">
+            <a href="tel:+48111111111" class="contakt infolist">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -261,10 +276,10 @@
             </li>
             <li class="footer__address"><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
             <li class="footer__address">
-              <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
+              <a href="mailto:info@example.com" class="contakt">info@example.com</a>
             </li>
             <li class="footer__address">
-              <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+              <a href="tel:+48111111111" class="contakt">+48 111 111 111</a>
             </li>
           </ul>
         </div>
@@ -326,7 +341,7 @@
         </div>
       </div>
     </footer>
-        <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
