@@ -77,10 +77,6 @@
   margin-right: 0;
 }
 
-.footer__joinus__link svg {
-  fill: var(--fourth-color);
-}
-
 .footer__joinus__link {
   @include center;
   border-radius: 50%;
@@ -115,8 +111,10 @@ ul {
   background-color: var(--color-white-dark);
 }
 
-.social__list__link:hover {
+.social__list__link:hover,
+.social__list__link:focus {
   background-color: var(--hover-color);
   fill: var(--color-white-dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
