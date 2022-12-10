@@ -1,21 +1,9 @@
-.menu {
+.menu-item {
   display: flex;
   color: var(--color-black);
   align-items: center;
   padding: 0 24px;
   font-weight: 700;
-}
-
-.navigation {
-  text-decoration: none;
-  color: inherit;
-  font-size: 14px;
-}
-
-.navigation:hover,
-.navigation:focus,
-.navigation:active {
-  color: var(--hover-color);
 }
 
 .menu-active-link {
@@ -40,7 +28,19 @@
   fill: var(--hover-color);
 }
 
-.contakt {
+.navigation {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.navigation:hover,
+.navigation:focus,
+.navigation:active {
+  color: var(--hover-color);
+}
+
+.contact-item {
   text-decoration: none;
   color: var(--color-grey);
   font-weight: 500;
@@ -51,8 +51,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt:hover,
-.contakt:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--hover-color);
 }
 
@@ -73,35 +73,13 @@ a:visited {
   justify-content: space-evenly;
 }
 
-.button {
-  display: inline-block;
-  height: 38px;
-  margin: 8px;
-  padding: 6px 22px 6px 22px;
-  background-color: var(--color-white-dark);
-  color: var(--color-black);
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover,
-.button:focus {
-  color: var(--color-white-dark);
-  background-color: var(--hover-color);
-}
-
-.menu-horizontal {
+.menu__nav-horizontal {
   display: flex;
   justify-content: center;
-  list-style: none;
-  gap: 30px;
+  // list-style: none;
   margin-left: auto;
 }
+
 .infolist {
   text-decoration: none;
   font-weight: 500;
@@ -132,7 +110,7 @@ a:visited {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-banner {
+.section-banner__button {
   color: var(--color-white-dark);
   background-color: var(--hover-color);
   line-height: 1;
@@ -146,4 +124,26 @@ a:visited {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  height: 38px;
+  margin: 8px;
+  padding: 6px 22px 6px 22px;
+  background-color: var(--color-white-dark);
+  color: var(--color-black);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--color-white-dark);
+  background-color: var(--hover-color);
 }

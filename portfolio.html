@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <header class="header-margin-bottom">
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <header class="header-line">
+      <!-- <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg
           width="24"
           height="24"
@@ -31,23 +31,25 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-      </button>
-      <div class="container header-wrapper">
+      </button> -->
+      <div class="container header__menu-wrapper">
         <nav>
-          <ul class="menu-horizontal">
-            <li class="menu">
+          <ul class="menu__nav-horizontal">
+            <li class="menu-item">
               <a href="#" class="logo-text-black"><span class="logo-text-blue">Web</span>Studio</a>
             </li>
-            <li class="menu">
+            <li class="menu-item">
               <a href="./index.html" class="navigation">Agencja</a>
             </li>
-            <li class="menu"><a href="./portfolio.html" class="menu-active-link">Portfolio</a></li>
-            <li class="menu"><a href="#" class="navigation">Kontakt</a></li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-active-link">Portfolio</a>
+            </li>
+            <li class="menu-item"><a href="#" class="navigation">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="menu-horizontal">
-          <li class="menu menu-envelope infolist">
-            <a href="mailto:info@devstudio.com" class="contakt">
+        <ul class="menu__nav-horizontal">
+          <li class="menu-item menu-envelope infolist">
+            <a href="mailto:info@devstudio.com" class="contact-item">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -55,8 +57,8 @@
             >
           </li>
 
-          <li class="menu menu-phone">
-            <a href="tel:+48111111111" class="contakt infolist">
+          <li class="menu-item menu-phone">
+            <a href="tel:+48111111111" class="contact-item infolist">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -78,8 +80,8 @@
         </div>
       </section>
       <section>
-        <div class="container portfolio-tabela">
-          <div class="portfolio-item">
+        <div class="container section-teams__portfolio-tabela">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -90,17 +92,17 @@
                 <img
                   src="./images/technocrack.jpg"
                   alt="foto - Technocrack - Strona internetowa"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Technocrack</h5>
+                <h5 class="section-teams__portfolio-space-info">Technocrack</h5>
                 <span class="kategory">Strona internetowa</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -111,17 +113,19 @@
                 <img
                   src="./images/golden_star.jpg"
                   alt="foto - Grafika New Orlen vs Golden Star - Dizajn"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Grafika New Orlen vs Golden Star</h5>
+                <h5 class="section-teams__portfolio-space-info">
+                  Grafika New Orlen vs Golden Star
+                </h5>
                 <span class="kategory">Dizajn</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -132,17 +136,17 @@
                 <img
                   src="./images/restaurant.jpg"
                   alt="foto - Restauracja Seafood Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Restauracja Seafood</h5>
+                <h5 class="section-teams__portfolio-space-info">Restauracja Seafood</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -153,17 +157,17 @@
                 <img
                   src="./images/headphone.jpg"
                   alt="foto - Projekt Prime - Marketing"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Projekt Prime</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt Prime</h5>
                 <span class="kategory">Marketing</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -174,17 +178,17 @@
                 <img
                   src="./images/boxes.jpg"
                   alt="foto - Projekt Boxes - Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Projekt Boxes</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt Boxes</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -192,16 +196,20 @@
                   koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
                   niezabezpieczone serwery konkurencji
                 </p>
-                <img src="./images/monitor.jpg" alt="John Doe" class="img-portfolio" />
+                <img
+                  src="./images/monitor.jpg"
+                  alt="John Doe"
+                  class="img-section-teams__portfolio"
+                />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Inspiration has Borders</h5>
+                <h5 class="section-teams__portfolio-space-info">Inspiration has Borders</h5>
                 <span class="kategory">Strona intenetowa</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -212,17 +220,17 @@
                 <img
                   src="./images/book.jpg"
                   alt="foto - Magazyn Limited Edition - Dizajn"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Magazyn Limited Edition</h5>
+                <h5 class="section-teams__portfolio-space-info">Magazyn Limited Edition</h5>
                 <span class="kategory">Dizajn</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -233,17 +241,17 @@
                 <img
                   src="./images/sticker.jpg"
                   alt="foto - Projekt LAB - Marketing"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Projekt LAB</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt LAB</h5>
                 <span class="kategory">Marketing</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -254,11 +262,11 @@
                 <img
                   src="./images/business.jpg"
                   alt="foto - Growing Business - Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="portfolio-space-info">Growing Business</h5>
+                <h5 class="section-teams__portfolio-space-info">Growing Business</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
@@ -276,10 +284,10 @@
             </li>
             <li class="footer__address"><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
             <li class="footer__address">
-              <a href="mailto:info@example.com" class="contakt">info@example.com</a>
+              <a href="mailto:info@example.com" class="contact-item">info@example.com</a>
             </li>
             <li class="footer__address">
-              <a href="tel:+48111111111" class="contakt">+48 111 111 111</a>
+              <a href="tel:+48111111111" class="contact-item">+48 111 111 111</a>
             </li>
           </ul>
         </div>
