@@ -12,7 +12,6 @@
   padding: 94px 0px 94px 0px;
 }
 
-
 .section-portfolio__link {
   display: block;
   /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -28,16 +27,16 @@
 //   /* color: var(--main-color); */
 // }
 
-.section-portfolio__link:hover .project-animation,
-.section-portfolio__link:focus .project-animation {
+.section-portfolio__link:hover .section-portfolio__animation,
+.section-portfolio__link:focus .section-portfolio__animation {
   transform: translateY(0%);
 }
 
-.project-active {
+.section-portfolio__box {
   position: relative;
   overflow: hidden;
 }
-.project-link {
+.section-portfolio__link {
   display: block;
   /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16); */
@@ -45,14 +44,30 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
-.project-link:focus {
+.section-portfolio__link:hover,
+.section-portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-link:hover .project-animation,
-.project-link:focus .project-animation {
+.section-portfolio__animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 49px 45px 49px 29px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+
+.section-portfolio__link:hover .section-portfolio__animation,
+.section-portfolio__link:focus .section-portfolio__animation {
   transform: translateY(0%);
 }
 .section-teams__portfolio-tabela-item {
@@ -66,23 +81,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.project-animaction-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #ffffff;
-  letter-spacing: 0.03em;
-}
-.project-animation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  background: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 49px 45px 49px 29px;
-}
-.img-section-teams__portfolio {
+.section-portfolio__img {
   display: block;
 }
 
@@ -91,17 +90,15 @@
   padding: 20px 24px;
 }
 
-
-// to dla  portolio  oddzielnie dla zakładki 
 .project__text {
   display: block;
   font-size: 16px;
   padding: 10px 0px 30px 30px;
- 
+
   font-family: 'Roboto';
   color: var(--color-grey);
 }
-// to dla  portolio  oddzielnie dla zakładki 
+
 .project__info {
   display: block;
   color: var(--color-black);
@@ -131,48 +128,3 @@
   border: 1px solid var(--color-white-dark);
   padding: 20px 24px;
 }
-
-// .portfolio-nav__list-center__button-kategory {
-//   max-width: 20%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-evenly;
-// }
-
-
-
-// kopia
-
-// .section-teams__portfolio {
-//   list-style: none;
-//   display: inline-flex;
-//   padding-bottom: 94px;
-// }
-
-// .section-teams__portfolio-list {
-//   display: flex;
-//   gap: 30px;
-//   flex-wrap: wrap;
-// }
-
-// .section-teams__portfolio-space {
-//   display: block;
-//   flex-direction: column;
-//   align-items: center;
-//   width: 270px;
-//   height: 428px;
-//   text-align: center;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 5px;
-//   margin: 15px;
-// }
-
-// .section-teams__portfolio-space-info {
-//   display: block;
-//   color: var(--color-black);
-//   font-family: 'Roboto';
-//   font-size: 18px;
-//   padding-top: 30px;
-//   padding-left: 30px;
-// }
