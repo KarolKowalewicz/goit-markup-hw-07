@@ -75,8 +75,13 @@
   display: block;
 }
 
+// .project__border {
+//   border: 1px solid var(--border-color);
+//   padding: 20px 24px;
+// }
+
 .project__border {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-white-dark);
   padding: 20px 24px;
 }
 
@@ -114,7 +119,3 @@
   margin: 0 auto;
 }
 
-.project__border {
-  border: 1px solid var(--color-white-dark);
-  padding: 20px 24px;
-}
